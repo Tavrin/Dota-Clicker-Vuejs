@@ -30,8 +30,7 @@ const minions = [
       purchased: 0,
       damage: 5,
       discovered: false,
-      // srcIco: 'fa fa-bicycle',
-      // srcSprite: 'assets/images/bicycle_spritesheet_h63px.png',
+      
   },
   {
       id: 1,
@@ -42,8 +41,7 @@ const minions = [
       purchased: 0,
       damage: 20,
       discovered: false,
-      // srcIco: 'fa fa-motorcycle',
-      // srcSprite: 'assets/images/scooter_spritesheet_h63px.png',
+      
   },
   {
       id: 2,
@@ -54,8 +52,7 @@ const minions = [
       purchased: 0,
       damage: 60,
       discovered: false,
-      // srcIco: 'fa fa-car',
-      // srcSprite: 'assets/images/car_spritesheet_h63px.png',
+     
   },
 ]
 
@@ -84,22 +81,17 @@ const heroes = [
         filename: "timbersaw.png",
         slots:[],
         level: 1,
-        life:  {
-            enumerable: true,
-            get: function(){
+        life:  function(){
                 return 300 + (30 * this.level)
-            }
+            
         },
         mana: function(){
                 return 10 + (10 * this.level)
             
         },
-        damage: {
-            enumerable: true,
-            get: function(){
-                return 10 + (10 * this.level)
-            }
-        },
+        damage:
+                 10 + (10 * currentLevel)
+            ,
         category: "Strength"
     },
     {
@@ -115,10 +107,9 @@ const heroes = [
             return 10 + (15 *  this.level)
          },
             
-        mana:  {
-            get: function(){
+        mana: function(){
                 return 10 + (15 * this.level)
-            }
+            
         },
         damage:
           20 + (10* currentLevel)
@@ -138,18 +129,13 @@ const heroes = [
                 return 100 + (20 * this.level)
             
         },
-        mana:  {
-            enumerable: true,
-            get: function(){
+        mana: function(){
                 return 30 + (30 * this.level)
-            }
+          
         },
-        damage: {
-            enumerable: true,
-            get: function(){
-                return 40 + (10 * this.level)
-            }
-        },
+        damage: 40 + (10 * currentLevel)
+            
+        ,
         category: "Intelligence"
     }
 ]

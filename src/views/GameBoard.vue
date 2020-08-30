@@ -1,5 +1,6 @@
 <template>
   <div  class="game">
+    <h1>WORK IN PROGRESS</h1>
 <transition name="fade">
               <div id="heroes-choose" v-if="this.$store.state.chooseHero == false && show">
                 <h2>Choisissez votre Héro</h2>
