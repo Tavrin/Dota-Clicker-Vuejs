@@ -1,0 +1,7 @@
+body{
+    background-image: url(../img/bg-dota.png);
+    min-height: 100vh;
+    color: white;
+    cursor: url(../img/cursor1.png), auto;
+}
+
