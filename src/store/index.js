@@ -75,7 +75,7 @@ const enemies = [
 const heroes = [
     {
         id: 0,
-        name: "Timbersaw",
+        name: "timbersaw",
         goldPassive: 1,
         active:false,
         filename: "timbersaw.png",
@@ -96,7 +96,7 @@ const heroes = [
     },
     {
         id: 1,
-        name: "Morphling",
+        name: "morphling",
         goldPassive: 1,
         active:false,
         filename: "morphling.png",
